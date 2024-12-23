@@ -68,7 +68,7 @@ async function scraperContent() {
         
         return new Promise((resolve) => {
           el.scrollIntoView({ behavior: "smooth", block: "center" }); // 平滑滚动到按钮位置
-          setTimeout(resolve, 1000); // 根据页面加载性能，适度调整，等待 1000 毫秒，以防出现`Error: Node is either not clickable or not an Element`
+          setTimeout(resolve, 1000); // 根据页面加载性能，适度调整，等待 1000 毫秒，以防出现`Error: Node is either not clickable or not an Element`，和反爬虫策略
         });
       });
 
